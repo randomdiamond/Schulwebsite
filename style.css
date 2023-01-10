@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #001e2b;
@@ -68,8 +71,6 @@ h2 {
   padding: 20px;
 }
 .welcome-button {
-  color: #d9e0b7;
-  font-size: 1.2rem;
   padding: 8px 14px;
   background-color: #21603c;
   border-radius: 11px;
@@ -81,6 +82,11 @@ h2 {
 .welcome-button:hover {
   width: 80%;
 }
+.welcome-btn-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #d9e0b7;
+}
 section {
   display: flex;
   justify-content: center;
@@ -90,7 +96,7 @@ section {
 .information-h {
   font-size: 1.4rem;
   color: #fff;
-  width: min(100%, 900px);
+  width: min(70%, 900px);
   padding: 30px 10% 20px;
 }
 .information-p {
@@ -108,4 +114,50 @@ mark {
 }
 .information-container {
   width: 70%;
+}
+.height-regulator {
+  height: 100px;
+}
+@media screen and (max-width: 1300px) {
+  nav {
+    height: 70px;
+  }
+
+  .nav-list {
+    gap: 15px;
+    margin: 0 5vw 0 auto;
+  }
+  .nav-list-item {
+    padding: 9px 20px;
+    font-size: 0.9rem;
+    border-radius: 15px;
+  }
+  .height-regulator {
+    height: 70px;
+  }
+  .welcome-container {
+    width: min(350px, 70%);
+  }
+  h2 {
+    color: #d9e0b7;
+    font-size: 1.7rem;
+    padding: 15px;
+  }
+  .welcome-button {
+    padding: 6px 14px;
+    background-color: #21603c;
+    border-radius: 11px;
+    border: 0;
+    cursor: pointer;
+    width: 60%;
+    transition: width 500ms ease-in-out;
+  }
+  .welcome-button:hover {
+    width: 80%;
+  }
+  .welcome-btn-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #d9e0b7;
+  }
 }
