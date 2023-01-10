@@ -118,6 +118,7 @@ mark {
 .height-regulator {
   height: 100px;
 }
+
 @media screen and (max-width: 1300px) {
   nav {
     height: 70px;
